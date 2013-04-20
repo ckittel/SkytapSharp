@@ -1,6 +1,6 @@
 ﻿namespace SkytapSharp.Models
 {
-    public enum ConfigurationState
+    public enum VirutalMachineState
     {
         Running,
         Stopped,
