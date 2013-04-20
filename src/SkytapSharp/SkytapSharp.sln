@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkytapSharp", "SkytapSharp\SkytapSharp.csproj", "{B697746E-4E4A-4B9D-B514-7226FC2ED119}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkytapSharp.Console", "SkytapSharp.Console\SkytapSharp.Console.csproj", "{02B3B2D3-3900-48CA-9957-8BB051DD564A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B697746E-4E4A-4B9D-B514-7226FC2ED119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B697746E-4E4A-4B9D-B514-7226FC2ED119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B697746E-4E4A-4B9D-B514-7226FC2ED119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B697746E-4E4A-4B9D-B514-7226FC2ED119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B3B2D3-3900-48CA-9957-8BB051DD564A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B3B2D3-3900-48CA-9957-8BB051DD564A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B3B2D3-3900-48CA-9957-8BB051DD564A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B3B2D3-3900-48CA-9957-8BB051DD564A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
