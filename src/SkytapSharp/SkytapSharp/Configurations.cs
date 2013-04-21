@@ -107,5 +107,18 @@ namespace SkytapSharp
             // DELETE
             throw new NotImplementedException();
         }
+
+        public Network GetConfigurationNetwork(string configurationId, string networkId)
+        {
+            var request = new RestRequest { Resource = ConfigurationResource + "/networks/" + networkId };
+
+            return Execute<Network>(request);
+        }
+
+        public Network UpdateConfigurationNetwork(string configurationId, Network network)
+        {
+            // PUT
+            throw new NotImplementedException();
+        }
     }
 }

@@ -76,5 +76,18 @@ namespace SkytapSharp
             // DELETE
             throw new NotImplementedException();
         }
+
+        public Network GetTemplateNetwork(string templateId, string networkId)
+        {
+            var request = new RestRequest { Resource = TemplateResource + "/networks/" + networkId };
+
+            return Execute<Network>(request);
+        }
+
+        public Network UpdateTemplateNetwork(string templateId, Network network)
+        {
+            // PUT
+            throw new NotImplementedException();
+        }
     }
 }

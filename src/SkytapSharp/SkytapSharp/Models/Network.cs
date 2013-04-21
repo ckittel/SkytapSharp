@@ -27,7 +27,10 @@ namespace SkytapSharp.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// Gets or sets the domain name
+        /// Gets or sets the domain name.
+        /// 
+        /// This value can only be changed when ALL virutal machines in the configuration
+        /// are stopped.
         /// 
         /// This is RW in the API
         /// </summary>
@@ -46,6 +49,12 @@ namespace SkytapSharp.Models
         /// Gets or sets the user-provided primary name server for
         /// this network.
         /// 
+        /// Skytap provisions domain name servers for 'Automatic' network
+        /// types.  This enabled VMs on the network to resolve names of
+        /// other VMs on the network.  Users can optionally override this
+        /// automatically provisioned name server and provide their own name
+        /// server for the network.
+        /// 
         /// This is RW in the API
         /// </summary>
         public string PrimaryNameserver { get; set; }
@@ -53,6 +62,12 @@ namespace SkytapSharp.Models
         /// <summary>
         /// Gets or sets the user-provided secondary name server for
         /// this network.
+        /// 
+        /// Skytap provisions domain name servers for 'Automatic' network
+        /// types.  This enabled VMs on the network to resolve names of
+        /// other VMs on the network.  Users can optionally override this
+        /// automatically provisioned name server and provide their own name
+        /// server for the network.
         /// 
         /// This is RW in the API
         /// </summary>
