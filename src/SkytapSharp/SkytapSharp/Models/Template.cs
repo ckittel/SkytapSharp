@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace SkytapSharp.Models
+﻿namespace SkytapSharp.Models
 {
     /// <summary>
     /// A template is a specification of one or more vitual machine images,
@@ -15,12 +13,6 @@ namespace SkytapSharp.Models
     /// </remarks>
     public class Template
     {
-        public Template()
-        {
-            //Vms = new List<VirtualMachine>();
-            //Networks = new List<Network>();
-        }
-
         /// <summary>
         /// Gets the identifier for this template.
         /// 

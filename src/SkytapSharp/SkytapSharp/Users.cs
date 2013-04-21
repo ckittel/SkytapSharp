@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using RestSharp;
 using SkytapSharp.Models;
 
@@ -10,11 +11,7 @@ namespace SkytapSharp
 
         public IReadOnlyCollection<User> GetUsers()
         {
-            var request = new RestRequest
-                              {
-                                  Resource = UserResource,
-                                  Method = Method.GET
-                              };
+            var request = new RestRequest { Resource = UserResource };
 
             return Execute<List<User>>(request).AsReadOnly();
         }
@@ -24,6 +21,20 @@ namespace SkytapSharp
             var request = new RestRequest {Resource = UserResource + "/" + id, Method = Method.GET};
 
             return Execute<User>(request);
+        }
+
+        /// <summary>
+        /// Creates a new user.
+        /// 
+        /// When creating a new user, only the LoginName, Password, and EMail fields
+        /// are required.
+        /// </summary>
+        /// <param name="newUser"></param>
+        /// <returns></returns>
+        public User CreateUser(User newUser)
+        {
+            // POST
+            throw new NotImplementedException();
         }
     }
 }
