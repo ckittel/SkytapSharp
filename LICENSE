@@ -21,3 +21,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 SkytapSharp includes works under other copyright notices.
 
 RestSharp - Copyright © 2010 John Sheehan (Apache 2.0)
+
+A majority of the comments in the code related to the API are Copyright © Skytap
+and were sourced from Skytap's API developer documentation.
