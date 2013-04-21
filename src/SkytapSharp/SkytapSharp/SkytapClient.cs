@@ -12,6 +12,7 @@ namespace SkytapSharp
     /// </summary>
     public partial class SkytapClient
     {
+        private const string VirtualMachineResource = "vms";
         private readonly RestClient _client;
 
         /// <summary>

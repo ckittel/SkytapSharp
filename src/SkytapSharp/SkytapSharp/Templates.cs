@@ -63,5 +63,18 @@ namespace SkytapSharp
             // POST configuration_id= --> URLS publish_sets=true
             throw new NotImplementedException();
         }
+
+        public VirtualMachine GetTemplateVirtualMachine(string templateId, string virtualMachineId)
+        {
+            var request = new RestRequest { Resource = TemplateResource + "/" + templateId + "/" + VirtualMachineResource + "/" + virtualMachineId };
+
+            return Execute<VirtualMachine>(request);
+        }
+
+        public void DeleteTempateVirtualMachine(string templateId, string virtualMachineId)
+        {
+            // DELETE
+            throw new NotImplementedException();
+        }
     }
 }

@@ -56,7 +56,6 @@
     <Compile Include="SkytapClient.cs" />
     <Compile Include="Templates.cs" />
     <Compile Include="Users.cs" />
-    <Compile Include="VirtualMachines.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

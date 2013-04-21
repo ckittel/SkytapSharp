@@ -82,5 +82,30 @@ namespace SkytapSharp
             // PUT config-id, template-id
             throw new NotImplementedException();
         }
+
+        public VirtualMachine GetConfigurationVirtualMachine(string configurationId, string virtualMachineId)
+        {
+            var request = new RestRequest { Resource = ConfigurationResource + "/" + configurationId + "/" + VirtualMachineResource + "/" + virtualMachineId };
+
+            return Execute<VirtualMachine>(request);
+        }
+
+        public VirtualMachine SetVirtualMachineState(string configurationId, VirutalMachineState state)
+        {
+            // PUT
+            throw new NotImplementedException();
+        }
+
+        public VirtualMachine MountIso(string configurationId, Uri isoAssetUri)
+        {
+            // PUT
+            throw new NotImplementedException();
+        }
+
+        public void DeleteConfigurationVirtualMachine(string templateId, string virtualMachineId)
+        {
+            // DELETE
+            throw new NotImplementedException();
+        }
     }
 }
